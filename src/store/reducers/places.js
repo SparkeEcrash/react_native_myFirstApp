@@ -15,7 +15,8 @@ const reducer = (state = initialState, action) => {
 					name: action.placeName,
 					image: {
 						uri:'https://r.hswstatic.com/w_907/gif/before-big-bang-3.jpg'
-					}
+					},
+					location: action.location
 				})
 			};
 		case DELETE_PLACE: 
