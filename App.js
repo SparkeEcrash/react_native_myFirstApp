@@ -15,12 +15,12 @@ Navigation.registerComponent("myFirstApp.AuthScreen", () => AuthScreen, store, P
 Navigation.registerComponent("myFirstApp.SharePlaceScreen", () => SharePlaceScreen, store, Provider);
 Navigation.registerComponent("myFirstApp.FindPlaceScreen", () => FindPlaceScreen, store, Provider);
 Navigation.registerComponent("myFirstApp.PlaceDetailScreen", () => PlaceDetailScreen, store, Provider);
-Navigation.registerComponent("myFirstApp.SideDrawer", () => SideDrawer);
+Navigation.registerComponent("myFirstApp.SideDrawer", () => SideDrawer, store, Provider);
 
 // Start an App
-Navigation.startSingleScreenApp({
+export default () => Navigation.startSingleScreenApp({
 	screen: {
 		screen: "myFirstApp.AuthScreen",
 		title: "Login"
 	}
-});
+	})
